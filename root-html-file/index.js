@@ -8,6 +8,4 @@ import * as singleSpa from 'single-spa';
 window.singleSpa = singleSpa;
 window.SystemJS = window.System;
 
-console.log('fdf');
-
 import 'zone.js';
