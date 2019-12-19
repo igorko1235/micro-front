@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "navbar": "http://localhost:8080/main.js",
+    "app1": "http://localhost:8081/main.js",
+    "app2": "http://localhost:8082/main.js"
+  }
+}

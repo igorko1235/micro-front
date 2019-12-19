@@ -3,12 +3,28 @@
   "description": "The single-spa root config for coexisting-angular-microfrontends",
   "main": "index.js",
   "scripts": {
-    "start": "serve -s -l 4200"
+    "start": "serve dist -s -l 4200",
+    "build": "webpack --config ./webpack.config.js -p",
+    "dev": "webpack-dev-server --open --mode development --config ./webpack.config.js -p"
   },
   "author": "Joel Denning",
   "license": "MIT",
   "devDependencies": {
-    "serve": "^11.1.0"
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "path": "^0.12.7",
+    "serve": "^11.1.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js-bundle": "^3.5.0",
+    "single-spa": "^4.4.1",
+    "systemjs": "^6.1.7",
+    "zone.js": "^0.10.2"
+  }
 }
